@@ -16,6 +16,9 @@ Syntax: `rom2gsf <GBA Files>`
 
 ### Options
 
+`-m`
+  : Multiboot ROM (set entrypoint to 0x2000000)
+
 `--help`
   : Show help
 

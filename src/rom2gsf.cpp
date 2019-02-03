@@ -117,6 +117,7 @@ static void usage(const char * progname)
 	printf("\n");
 	printf("`-m`\n");
 	printf("  : Multiboot ROM (set entrypoint to 0x2000000)\n");
+	printf("\n");
 	printf("`-o [output.gsf]`\n");
 	printf("  : Specify output filename\n");
 	printf("\n");
