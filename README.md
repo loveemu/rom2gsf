@@ -12,15 +12,15 @@ Downloads
 Usage
 -----
 
-Syntax: `rom2gsf <GBA Files>`
+Syntax: `rom2gsf (options) <GBA Files>`
 
 ### Options
 
-`-m`
-  : Multiboot ROM (set entrypoint to 0x2000000)
-
 `--help`
   : Show help
+
+`-m`
+  : Multiboot ROM (set entrypoint to 0x2000000)
 
 `-o [output.gsf]`
   : Specify output filename
