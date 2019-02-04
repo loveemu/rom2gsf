@@ -30,7 +30,7 @@
 #endif
 
 #define APP_NAME    "rom2gsf"
-#define APP_VER     "[2019-02-03]"
+#define APP_VER     "[2019-02-04]"
 #define APP_URL     "http://github.com/loveemu/rom2gsf"
 
 #define GSF_PSF_VERSION        0x22
@@ -185,7 +185,8 @@ int main(int argc, char *argv[])
 			default_load_offset = false;
 
 			if (!((load_offset >= 0x8000000 && load_offset <= 0x9ffffff) || (load_offset >= 0x2000000 && load_offset <= 0x203ffff))) {
-				fprintf(stderr, "Error: Load offset 0x%08X is out of range (0x80XXXXX is preferred for most cases)\n", load_offset);
+				fprintf(stderr, "Error: Load offset 0x%08X is out of range\n", load_offset);
+				fprintf(stderr, "       Valid ranges are 0x8000000..0x9FFFFFF and 0x2000000..0x203FFFF (for multiboot ROM)\n");
 				return EXIT_FAILURE;
 			}
 
@@ -220,7 +221,7 @@ int main(int argc, char *argv[])
 
 	uint32_t gsf_entrypoint = multiboot ? 0x02000000 : 0x08000000;
 	if (default_load_offset) {
-		load_offset = gsf_entrypoint;
+		load_offset = multiboot ? 0x02000000 : 0x08000000;
 	}
 
 	int argnum = argc - argi;
