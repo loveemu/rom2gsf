@@ -1,6 +1,6 @@
 ROM2GSF: GBA ROM to GSF Converter
 ==================================
-[![Travis Build Status](https://travis-ci.org/loveemu/rom2gsf.svg?branch=master)](https://travis-ci.org/loveemu/rom2gsf) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/wfhyffhwtk5hqkh6/branch/master?svg=true)](https://ci.appveyor.com/project/loveemu/rom2gsf/branch/master)
+[![Travis Build Status](https://travis-ci.com/loveemu/rom2gsf.svg?branch=master)](https://travis-ci.com/loveemu/rom2gsf) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/wfhyffhwtk5hqkh6/branch/master?svg=true)](https://ci.appveyor.com/project/loveemu/rom2gsf/branch/master)
 
 Program to turn a ROM (or any binary files) into a GSF file. This is used mostly with manual rips.
 
